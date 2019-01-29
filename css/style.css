@@ -1,0 +1,584 @@
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+ 
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+
+  .col-lg-hidden {
+  display: none;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.top-head{
+  background-color: #003333;
+}
+
+a{
+  color: white;
+  text-decoration-line: none;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  display: inline-block;
+}
+
+.social-icon ul li{
+margin-right: 20px;
+font-size: 13px;
+}
+
+.social-right ul{
+  float: right;
+}
+.social-right ul li{
+  margin-right: 20px;
+  font-size: 13px;
+}
+.social-right ul li i{
+  margin-right: 10px;
+  color: #18ba60;
+}
+.nav-bar ul li{
+  margin: 20px 40px 20px 0px;
+}
+.nav-bar ul li a{
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav-bar ul li i{
+  font-size: 10px;
+  padding-left: 5px;
+}
+.search-input{
+  position: relative;
+}
+.search-input input{
+margin: 20px;
+padding: 12px;
+width: 90%;
+border-radius: 4px;
+border: 1px solid grey;
+}
+.search-input i{
+  position: absolute;
+  font-size: 25px;
+  top: 30px;
+  right: 20px;
+}
+img{
+  width: 100%;
+}
+.slide-page{
+  position: relative;
+}
+.slide-caption{
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+.slide-caption img{
+  width: 36%;
+  margin-bottom: 40px;
+}
+.slide-caption h1{
+  font-size: 4em;
+  color: white;
+}
+.slide-caption h6{
+  font-size: 30px;
+  margin: -50px 0px 50px 0;
+  text-align: right;
+  color: white;
+}
+.slide-caption h6 span{
+  color: #18ba60;
+}
+.btn{
+  text-align: center;
+}
+.btn button{
+  background: none;
+  color: #ffffff;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  padding: 19px 34px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 23px;
+  line-height: 18px;
+}
+.awesome .feature{
+  margin-bottom: 40px;
+  margin-right: 15px;
+}
+.awesome .feature i{
+  float: left;
+  font-size: 50px;
+  color: #18ba60;
+  margin: 0 35px 25px 0;
+}
+.awesome .feature h2{
+  font-size: 22px;
+  color: #000;
+  padding: 15px 0 40px 0;
+  margin: 0;
+}
+.awesome .feature p{
+  font-size: 15px;
+  color: #999999;
+  margin: 0;
+  line-height: 24px;
+  font-weight: 300;
+}
+.view-more{
+  margin-top: 60px;
+  text-align: center;
+
+}
+.view-more button{
+  border-radius: 8px;
+  padding: 18px 27px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border: 0;
+  line-height: 16px;
+  background: #18ba60;
+}
+.ch{
+  font-size: 28px;
+  color: #000;
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+.cr{
+  margin-bottom: 70px;
+  border-top: 3px solid #18ba60;
+  width: 52px;
+}
+.all-btn{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.all-btn ul li{
+  margin-right: 10px;
+}
+.all-btn ul li a{
+  border: 1px solid;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000;
+  padding: 13px 20px;
+  border-radius: 6px;
+  line-height: 14px;
+}
+.all-btn .active-btn{
+  border: 1px solid #1dbb64;
+  background-color: #1dbb64;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  padding: 13px 20px;
+  border-radius: 6px;
+  line-height: 14px;
+}
+.img img{
+width: 100%;
+display: block;
+height: auto;
+}
+.ov-width .col-xl-3{
+  width: 20%;
+}
+.why{
+  margin: 100px 0;
+}
+.why h1{
+  margin: 0px;
+}
+.why h1 i{
+  margin-right: 40px;
+}
+.why p{
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 25px;
+}
+.why ul{
+margin-top: 40px;;
+padding: 0;
+}
+.why ul li{
+  display: block;
+}
+.why ul li i{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #000;
+  color: white;
+  padding-top:15px; 
+  margin: 0 30px 20px 0;
+}
+.why ul li a{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+}
+.work{
+  background: black;
+  margin-bottom: 100px;
+}
+.work h1{
+  color: #fff;
+}
+.work ul{
+  margin: 0 0 60px 0;
+}
+.work ul li{
+  padding: 0 15px 0 0;
+  text-align: center;
+}
+.work ul li a{
+  color: gray;
+  padding: 0 0 20px 0;
+  position: relative;
+  display: block;
+}
+.work ul li .icon{
+  border: 2px solid #fff;
+  margin-bottom: 0; 
+}
+.work ul li .icon i{
+  background: transparent;
+  margin: 10px;
+  color: #fff;
+  font-size: 45px;
+  padding: 40px;
+}
+.work ul li a span{
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 25px;
+}
+.blog .left-img{
+  padding-right: 20px;
+}
+.blog .right-img{
+  padding-left: 20px;
+}
+.blog .right-img div:nth-child(1){
+  margin-bottom: 25px;
+}
+.blog .blog-content{
+  padding-left: 10px;
+}
+.blog .blog-content h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 10px 0;
+  line-height: 15px;
+}
+.blog .blog-content p{
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+.blog .blog-content ul{
+  margin: 0;
+  background: #f0eded;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 8px 15px;
+}
+.blog .blog-content ul li{
+  margin-left: 10px;
+  color: #ccc;
+}
+.blog .blog-content ul li i{
+  font-size: 15px;
+  margin-right: 10px;
+}
+.blog .blog-content ul li:nth-last-child(1){
+  float: right;
+}
+.testimonial{
+  background: rgb(156, 82, 82);
+}
+.testimonial .full-content{
+  margin-bottom: 100px;
+}
+.testimonial .test-content{
+  background: black;
+  padding-bottom: 33px;
+}
+.testimonial .test-content h2{
+  color: #99cc00;
+  margin: 30px 0px 15px 25px;
+  font-size: 25px;
+}
+.testimonial .test-content h5{
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  margin: 25px;
+}
+.testimonial .content-right{
+  background: #fff;
+  padding: 28px 55px 0px 45px;
+}
+.testimonial .content-p span{
+  font-size: 14px;
+  color: #18ba60;
+}
+.testimonial .content-icon i{
+  font-size: 130px;
+  color: #ededed;
+  float: right;
+}
+.client{
+  margin: 40px 0px;
+}
+.map{
+  width: 100%;
+  border-top: 2px solid #999999;
+}
+footer{
+  background: #003333;
+  padding: 65px 0 70px 0;
+  position: relative;
+}
+footer h5{
+  font-size: 15px;
+  color: #fff;
+  margin: 15px 0 15px 0;
+}
+footer hr{
+  margin: 0 0 25px 0;
+  border: 2px solid #18ba60;
+  width: 25px;
+}
+footer p{
+  font-size: 15px;
+  color: #acaba2;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+footer [class*="col-"]{
+  padding: 0 15px;
+}
+footer .check li{
+float: left;
+width: 50%;
+}
+footer .check li:nth-last-child(1){
+  width: 100%;
+}
+footer .check li a{
+  font-size: 15px;
+  color: #acaba2;
+}
+footer .check li i{
+  margin-right: 11px;
+}
+footer .pop .check li {
+  width: 33%;
+  color: #acaba2;
+  padding: 5px;
+}
+footer .pop .check li a{
+  padding: 8px 20px 8px 0;
+  font-size: 12px;
+  color: #acaba2;
+}
+footer .input{
+  position: relative;
+}
+footer .input input{
+  height: 45px;
+  border-radius: 0px;
+  width: 100%;
+  color: #868686;
+  padding: 0px 10px;
+  border: 1px solid #acaba3;
+  background: transparent;
+}
+footer .input .btn{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  color: #19ba61;
+  padding: 11px 0px;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+footer .news ul li .blog{
+  border-bottom: 1px solid #115e68;
+}
+footer .news ul li .blog img{
+float: left;
+margin: 0 20px 0 0;
+width: 25%;
+}
+footer .blog{
+  width: 200px;
+  margin-top: 10px;
+}
+footer .blog h6{
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+  text-align: left;
+}
+footer .blog p{
+  font-size: 10px;
+  margin: 0 0 5px 0;
+  line-height: 15px;
+  color: #999999;
+}
+footer .blog ul{
+  margin: 0 0 10px 65px;
+}
+footer .blog ul li{
+  font-size: 10px;
+  margin: 0 0 5px 0;
+  line-height: 11px;
+  color: #999;
+}
+footer .blog ul li:last-child{
+  float: right;
+  margin-top: 5px;
+}
+footer .l-img .img img{
+  width: 23%;
+  display: inline-block;
+}
+
+footer .follow ul li{
+  margin-right: 12px;
+  color: #999;
+}
+
+.copyright{
+  background: black;
+  padding: 20px 0 20px;
+}
+.copyright .copy-left ul li{
+  font-size: 12px;
+  color: #cccccc;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #ccc;
+}
+.copyright .copy-right ul li {
+  padding: 0 40px 0 0;
+}
